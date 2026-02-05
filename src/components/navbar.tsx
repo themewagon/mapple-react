@@ -16,7 +16,7 @@ export const Navbar = () => {
     return (
         <div className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-800">
             <Link to='/' className="flex items-center gap-2">
-                <img src="/logo.svg" alt="Logo" width={127} height={32} />
+                <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo" width={127} height={32} />
             </Link>
             <ul className="max-md:hidden flex items-center gap-8">
                 {links.map((link) => (

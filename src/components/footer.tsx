@@ -5,7 +5,7 @@ export const Footer = () => {
                 <div className="border-x p-8 md:p-14 border-gray-800 grid gap-12 md:grid-cols-2">
                     <div>
                         <img
-                            src="/logo-mark.svg"
+                            src={`${import.meta.env.BASE_URL}logo-mark.svg`}
                             alt="Logo Mark"
                             width={30}
                             height={30}
