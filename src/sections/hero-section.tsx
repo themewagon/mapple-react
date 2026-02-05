@@ -25,7 +25,7 @@ export const HeroSection = () => {
                 </div>
                 <div className="mt-10 flex items-center justify-center gap-2">
                     <img
-                        src="/rating-logo-mark.svg"
+                        src={`${import.meta.env.BASE_URL}rating-logo-mark.svg`}
                         alt="ration logo"
                         width={100}
                         height={100}
@@ -44,7 +44,7 @@ export const HeroSection = () => {
             </div>
             <div className="p-3 md:p-6 w-full mt-16 border-t border-gray-800">
                 <img
-                    src='/hero-section-image.png'
+                    src={`${import.meta.env.BASE_URL}hero-section-image.png`}
                     height={500}
                     width={1440}
                     alt="Hero Section Image"

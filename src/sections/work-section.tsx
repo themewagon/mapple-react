@@ -16,7 +16,7 @@ export const WorkSection = () => {
                         key={index}
                         className="relative group rounded-lg md:rounded-2xl overflow-hidden"
                     >
-                        <img className="group-hover:opacity-60 transition duration-500" src={work.image} alt={work.title} />
+                        <img className="group-hover:opacity-60 transition duration-500" src={`${import.meta.env.BASE_URL}${work.image.replace(/^\//, "")}`} alt={work.title} />
                         <div className="absolute flex items-center justify-between p-3 rounded-lg -bottom-20 group-active:bottom-6 group-hover:bottom-6 left-6 right-6 bg-white transition-all duration-500 ease-in-out">
                             <h3 className="text-base text-black font-medium">{work.title}</h3>
                             <div className="bg-primary p-2 rounded-full">
